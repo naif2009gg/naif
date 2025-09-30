@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أدوات الشبكة والنظام</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>أدوات الشبكة والنظام</h1>
+    </header>
+    <main>
+        <div id="ip-info" class="tool-card">
+            <h2><i class="fas fa-network-wired"></i> معلومات IP</h2>
+            <p><strong>IP الخاص بك:</strong> <span id="user-ip">جاري البحث...</span></p>
+            <div id="ip-details"></div>
+            <hr>
+            <h3><i class="fas fa-search-location"></i> تتبع أي IP</h3>
+            <input type="text" id="ip-input" placeholder="أدخل عنوان IP هنا">
+            <button id="track-ip-btn">تتبع</button>
+            <div id="track-ip-details"></div>
+        </div>
+
+        <div id="ping-tool" class="tool-card">
+            <h2><i class="fas fa-signal"></i> اختبار الاتصال (Ping)</h2>
+            <button id="ping-btn">بدء الاختبار</button>
+            <p><strong>الحالة:</strong> <span id="ping-status">جاهز</span></p>
+            <p><strong>النتيجة:</strong> <span id="ping-result"></span></p>
+        </div>
+
+        <div id="system-info" class="tool-card">
+            <h2><i class="fas fa-desktop"></i> معلومات الجهاز</h2>
+            <p><strong>كرت الشاشة (GPU):</strong> <span id="gpu-info">غير معروف</span></p>
+            <p><strong>تخزين المتصفح:</strong> <span id="storage-info">جاري الحساب...</span></p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 - تم التطوير بواسطة Jules</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
